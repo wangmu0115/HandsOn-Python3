@@ -1,4 +1,3 @@
-from collections.abc import Iterator
 import sys
 
 
@@ -27,5 +26,3 @@ if __name__ == "__main__":
         12 / 0  # ZeroDivisionError
 
     print("Alice, Kitty and Snowdrop")
-
-Iterator
