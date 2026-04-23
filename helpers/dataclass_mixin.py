@@ -385,9 +385,9 @@ def _convert_value(
         if datetime_timestamp:
             match datetime_timestamp:
                 case "s":
-                    return int(datetime.timestamp())
+                    return int(value.timestamp())
                 case "ms":
-                    return int(datetime.timestamp() * 1000)
+                    return int(value.timestamp() * 1000)
                 case _:
                     raise ValueError(f"时间转时间戳的单位[{datetime_timestamp}]不合法")
         raise ValueError(f"{value} 是 `datetime` 类型；当 `keep_datetime=False` 时，`datetime_format` 和 `datetime_timestamp` 不能同时为空")
